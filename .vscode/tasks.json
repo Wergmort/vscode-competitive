@@ -7,9 +7,14 @@
                 "Build",
                 "Run with Input"
             ],
+            "dependsOrder": "sequence",
             "type": "shell",
             "command": "echo Build and Run complete",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "Build",
@@ -30,7 +35,10 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "手動設定によるビルドタスク"
+            "detail": "手動設定によるビルドタスク",
+            "group": {
+                "kind": "build",
+            }
         },
         {
             "label": "Run with Input",
@@ -44,10 +52,6 @@
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         },
         {
             "type": "cppbuild",
