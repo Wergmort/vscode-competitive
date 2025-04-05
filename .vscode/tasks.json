@@ -53,25 +53,5 @@
             },
             "problemMatcher": [],
         },
-        {
-            "type": "cppbuild",
-            "label": "C/C++: cl.exe アクティブなファイルのビルド",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$msCompile"
-            ],
-            "group": "build",
-            "detail": "コンパイラ: cl.exe"
-        }
     ]
 }
